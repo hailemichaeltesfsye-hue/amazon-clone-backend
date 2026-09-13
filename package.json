@@ -1,7 +1,27 @@
-"scripts": {
+{
+  "name": "amazon-clone-backend",
+  "version": "1.0.0",
+  "description": "Amazon Clone Backend API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
-    "start": "node index.js",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log"
   },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "firebase-admin": "^13.6.0",
+    "firebase-functions": "^7.0.0",
+    "stripe": "^22.5.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.4.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
